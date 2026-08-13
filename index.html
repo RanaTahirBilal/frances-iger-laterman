@@ -11,10 +11,10 @@
       <!-- keywords -->
       <meta name="keywords" content="Frances Iger Laterman, private art dealer, art consultant, L'Esprit d'Art, classical contemporary art, art collection advisor, New York art dealer, American Federation of Arts, Laterman Family Foundation">
       <meta name="robots" content="index, follow">
-      <link rel="canonical" href="https://ranatahirbilal.github.io/frances-iger-laterman/">
-      <meta property="og:url" content="https://ranatahirbilal.github.io/frances-iger-laterman/">
-      <meta property="og:image" content="https://ranatahirbilal.github.io/frances-iger-laterman/art-agency/img/banner.png">
-      <meta name="twitter:image" content="https://ranatahirbilal.github.io/frances-iger-laterman/art-agency/img/banner.png">
+      <link rel="canonical" href="https://frolicking-semifreddo-a969f7.netlify.app/">
+      <meta property="og:url" content="https://frolicking-semifreddo-a969f7.netlify.app/">
+      <meta property="og:image" content="https://frolicking-semifreddo-a969f7.netlify.app/art-agency/img/banner.png">
+      <meta name="twitter:image" content="https://frolicking-semifreddo-a969f7.netlify.app/art-agency/img/banner.png">
       <meta property="og:type" content="profile">
       <meta property="og:title" content="Frances Iger Laterman | Private Art Dealer &amp; Consultant">
       <meta property="og:description" content="Four decades advising collectors in classical contemporary art. Owner of L&rsquo;Esprit d&rsquo;Art since 1982.">
@@ -32,7 +32,8 @@
        "sameAs":["https://www.linkedin.com/in/frances-iger-laterman-77245127/"]}
       </script>
       <!-- Favicon -->
-      <link rel="icon" href="vendor/img/favicon.ico">
+      <link rel="icon" type="image/svg+xml" href="vendor/img/favicon.svg">
+<link rel="icon" href="vendor/img/favicon.ico">
       <!-- Bundle -->
       <link rel="stylesheet" href="vendor/css/bundle.min.css">
       <!-- Plugin Css -->
@@ -439,11 +440,11 @@
       <section class="contact-section" id="contact">
          <div class="container">
             <div class="row no-gutters">
-               <div class="col-lg-6 col-md-12 col-sm-12 ">
+               <div class="col-lg-5 col-md-12 col-sm-12 ">
                   <div class="text-section">
                      <h5 class="subheading">Let&rsquo;s Get In Touch</h5>
                      <h2 class="heading">Enquiries</h2>
-                     <p class="text">For consultation, acquisition advice or collection guidance, the most direct route is LinkedIn. Messages are read personally.</p>
+                     <p class="text">For consultation, acquisition advice or collection guidance, write using the form or connect on LinkedIn.</p>
                      <div class="row no-gutters">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                            <div class="contact-detail contact-detail-1">
@@ -466,15 +467,50 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-5 col-md-12 col-sm-12 offset-lg-1">
+               <div class="col-lg-6 col-md-12 col-sm-12 offset-lg-1">
                   <div class="form-section">
-                     <h2 class="heading">Reach Her Directly</h2>
-                     <p class="text">Enquiries about acquisitions, valuations or building a collection are welcome. LinkedIn is the fastest way to reach her, and messages go straight to her.</p>
-                     <a class="btn button btn-rounded blue-btn btn-hvr-green btn-green btn-1" href="https://www.linkedin.com/in/frances-iger-laterman-77245127/" target="_blank" rel="noopener">Message on LinkedIn</a>
-                     <!-- Needs Client Confirmation: the enquiry form was removed because no address of hers
-                          is public, and it must not deliver to a personal third-party inbox. Reinstate it in
-                          one line by pointing the form action at her address, or at a Top Dynamos business
-                          address, once one is confirmed. -->
+                     <h2 class="heading">Leave a Message</h2>
+                     <p class="text">Enquiries are read personally.</p>
+                     <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/" class="contact-form" id="contact-form-data">
+                        <input type="hidden" name="form-name" value="contact">
+                        <p class="d-none"><label>Leave this field blank: <input name="bot-field" tabindex="-1"></label></p>
+                        <div class="row">
+                           <div class="col-12" id="result"></div>
+                           <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="form-group">
+                                 <label class="sr-only" for="f-name">Name</label>
+                                 <input id="f-name" class="form-control" type="text" placeholder="Name" required name="name">
+                              </div>
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="form-group">
+                                 <label class="sr-only" for="f-email">Email</label>
+                                 <input id="f-email" class="form-control" type="email" placeholder="Email" required name="email">
+                              </div>
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="form-group">
+                                 <label class="sr-only" for="f-phone">Contact</label>
+                                 <input id="f-phone" class="form-control" type="tel" placeholder="Contact" name="phone">
+                              </div>
+                           </div>
+                           <div class="col-lg-6 col-md-6 col-sm-6">
+                              <div class="form-group">
+                                 <label class="sr-only" for="f-subject">Subject</label>
+                                 <input id="f-subject" class="form-control" type="text" placeholder="Subject" name="subject">
+                              </div>
+                           </div>
+                           <div class="col-lg-12 col-md-12 col-sm-12">
+                              <div class="form-group">
+                                 <label class="sr-only" for="f-msg">Message</label>
+                                 <textarea id="f-msg" class="form-control" placeholder="Write your message here" name="message" rows="6" required></textarea>
+                              </div>
+                           </div>
+                           <div class="button-center">
+                              <button type="submit" class="btn button btn-rounded blue-btn btn-hvr-green btn-green btn-1">Send</button>
+                           </div>
+                        </div>
+                     </form>
                   </div>
                </div>
             </div>
@@ -514,122 +550,5 @@
       <!-- custom script-->
       <script src="art-agency/js/circle-progress.min.js"></script>
             <script src="art-agency/js/script.js"></script>
-      <!-- Motion layer: both libraries ship with the purchased MegaOne template.
-           No template CSS or JS file is modified; everything below is scoped to this page. -->
-      <script src="vendor/js/tilt.jquery.min.js"></script>
-      <script id="site-motion">
-      (function ($) {
-         if (typeof $ === 'undefined') { return; }
-         $(function () {
-            var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            var touch   = window.matchMedia && window.matchMedia('(hover: none)').matches;
-            if (reduced) { return; }
-
-            /* 1. 3D tilt. Pointer devices only: on touch there is no hover, and a
-                  stuck transform would leave the card crooked after a tap. */
-            if (!touch && $.fn.tilt) {
-               /* Bind to .cbp-caption, not .cbp-caption-defaultWrap: cubeportfolio
-                  lays .cbp-caption-activeWrap over the top as a SIBLING, so mousemove
-                  never reaches defaultWrap once you are actually hovering it. */
-               $('#js-grid-mosaic .cbp-caption').tilt({
-                  maxTilt: 8, perspective: 1400, scale: 1.02,
-                  speed: 500, glare: true, maxGlare: 0.15, easing: 'cubic-bezier(.03,.98,.52,.99)'
-               });
-               $('.banner-section .img-section img').tilt({
-                  maxTilt: 6, perspective: 1800, scale: 1.015,
-                  speed: 700, glare: false
-               });
-               $('.services-section .img-section img').tilt({
-                  maxTilt: 5, perspective: 1800, scale: 1.01,
-                  speed: 700, glare: false
-               });
-            }
-
-            /* 2. Scroll parallax on the decorative dot fields and the banner circle.
-                  rAF-throttled, transform only, so it never triggers layout. */
-            var layers = [];
-            $('.dots-img, [class*="dots-img"], img[src*="dots-img"]').each(function () {
-               layers.push({ el: this, rate: 0.55 });
-            });
-            $('.banner-section .circle').each(function () {
-               layers.push({ el: this, rate: -0.30 });
-            });
-            $('.about-us .row-2 .img-section img').each(function () {
-               layers.push({ el: this, rate: 0.10 });
-            });
-
-            if (layers.length) {
-               var ticking = false, vh = window.innerHeight;
-               var apply = function () {
-                  for (var i = 0; i < layers.length; i++) {
-                     var L = layers[i], r = L.el.getBoundingClientRect();
-                     if (r.bottom < -200 || r.top > vh + 200) { continue; }
-                     var progress = (r.top + r.height / 2 - vh / 2) / vh;
-                     L.el.style.transform = 'translate3d(0,' + (progress * L.rate * 100).toFixed(2) + 'px,0)';
-                     L.el.style.willChange = 'transform';
-                  }
-                  ticking = false;
-               };
-               var onScroll = function () {
-                  if (!ticking) { ticking = true; window.requestAnimationFrame(apply); }
-               };
-               window.addEventListener('scroll', onScroll, { passive: true });
-               window.addEventListener('resize', function () { vh = window.innerHeight; onScroll(); }, { passive: true });
-               apply();
-            }
-
-            /* 3. Staggered reveal for the four recognition tiles. wow.js already
-                  handles the rest of the page; cubeportfolio builds these late. */
-            setTimeout(function () {
-               $('#js-grid-mosaic .cbp-item').each(function (i) {
-                  var el = this;
-                  el.style.opacity = 0;
-                  el.style.transition = 'opacity .7s ease ' + (i * 0.12) + 's';
-                  setTimeout(function () { el.style.opacity = 1; }, 60);
-               });
-            }, 300);
-         });
-      })(window.jQuery);
-      </script>
-      <style id="site-motion-css">
-         /* Slow drift on the decorative marks. Pure CSS, pauses for reduced-motion. */
-         @keyframes fil-drift { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-14px) } }
-         @keyframes fil-pulse { 0%,100% { transform: scale(1); opacity: .9 } 50% { transform: scale(1.06); opacity: 1 } }
-
-         .banner-section .circle { animation: fil-pulse 7s ease-in-out infinite; }
-         .banner-section .text-section .subheading { animation: fil-drift 9s ease-in-out infinite; }
-
-         /* Pre-existing template defect, not caused by the motion layer: the
-            off-canvas .side-menu sits at right:1872px and gives every page in this
-            demo a horizontal scrollbar on desktop. Confirmed by diffing scrollWidth
-            with the motion layer stripped out (1613px either way). */
-         html, body { overflow-x: hidden; }
-
-         /* Give the tilted cards a real edge so the 3D reads as depth, not skew. */
-         #js-grid-mosaic .cbp-caption { transform-style: preserve-3d; }
-         #js-grid-mosaic .cbp-caption-defaultWrap { border-radius: 2px; }
-         #js-grid-mosaic .cbp-item { transition: box-shadow .45s ease; }
-         #js-grid-mosaic .cbp-item:hover { box-shadow: 0 26px 55px -22px rgba(0,0,0,.45); }
-
-         .banner-section .img-section img,
-         .services-section .img-section img { transform-style: preserve-3d; will-change: transform; }
-
-         /* Underline that draws itself on hover, instead of appearing instantly. */
-         .navbar .nav-link { position: relative; }
-         .navbar .nav-link::after {
-            content: ""; position: absolute; left: 0; bottom: -4px;
-            height: 1px; width: 100%; background: currentColor;
-            transform: scaleX(0); transform-origin: right;
-            transition: transform .45s cubic-bezier(.22,.61,.36,1);
-         }
-         .navbar .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
-
-         @media (prefers-reduced-motion: reduce) {
-            .banner-section .circle,
-            .banner-section .text-section .subheading { animation: none !important; }
-            #js-grid-mosaic .cbp-item,
-            .navbar .nav-link::after { transition: none !important; }
-         }
-      </style>
    </body>
 </html>
