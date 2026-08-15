@@ -1,28 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-      <meta name="robots" content="noindex, nofollow">
-      <title>Thank You | Frances Iger Laterman</title>
-      <link rel="icon" href="vendor/img/favicon.ico">
-      <link rel="stylesheet" href="vendor/css/bundle.min.css">
-      <link rel="stylesheet" href="art-agency/css/style.css">
-      <style>
-         body { display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
-         .thanks { text-align: center; max-width: 560px; padding: 40px 28px; }
-         .thanks .mark { font-family: Georgia, 'Times New Roman', serif; font-style: italic;
-                         font-size: 34px; letter-spacing: .06em; margin-bottom: 28px; color: #111; }
-         .thanks h1 { font-size: 34px; font-weight: 700; margin: 0 0 14px; letter-spacing: -.01em; }
-         .thanks p { color: #6d6d6d; margin: 0 0 30px; line-height: 1.7; }
-      </style>
-   </head>
-   <body>
-      <div class="thanks">
-         <div class="mark">FIL</div>
-         <h1>Thank you</h1>
-         <p>Your message has been sent and will be read personally. You can expect a reply to the address you provided.</p>
-         <a class="btn button btn-rounded blue-btn btn-hvr-green btn-green btn-1" href="index.html">Back to the site</a>
-      </div>
-   </body>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+<title>Message sent | Frances Iger Laterman</title>
+<meta name="description" content="Your message has been sent to Frances Iger Laterman.">
+<meta name="robots" content="noindex, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --pb-brand:#2B2B2B; --pb-accent:#85CBCA; --pb-accent-2:#A6DCDB;
+    --pb-ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; min-height:100vh; background:var(--pb-brand);
+    font-family:'Montserrat',sans-serif; color:#fff;
+    display:flex; align-items:center; justify-content:center; padding:30px;
+    text-align:center;
+  }
+  .wrap{ max-width:560px; animation:rise .8s var(--pb-ease) both; }
+  @keyframes rise{ from{ opacity:0; transform:translateY(22px); } to{ opacity:1; transform:none; } }
+  .tick{
+    width:78px; height:78px; margin:0 auto 30px; border-radius:50%;
+    border:2px solid var(--pb-accent); display:flex; align-items:center; justify-content:center;
+  }
+  .tick i{ font-size:38px; color:var(--pb-accent-2); }
+  .eyebrow{
+    color:var(--pb-accent-2); letter-spacing:.2em; text-transform:uppercase;
+    font-size:12px; font-weight:600; margin:0 0 14px;
+  }
+  h1{ font-size:2.2rem; font-weight:300; margin:0 0 18px; line-height:1.25; }
+  p{ color:rgba(255,255,255,.78); line-height:1.85; font-size:16px; margin:0 0 12px; }
+  .links{ margin-top:36px; }
+  a.btn{
+    display:inline-block; padding:14px 30px; margin:0 6px 10px;
+    font-size:12.5px; font-weight:600; letter-spacing:.09em; text-transform:uppercase;
+    border-radius:2px; text-decoration:none; border:1px solid;
+    transition:background .3s var(--pb-ease), color .3s var(--pb-ease),
+               border-color .3s var(--pb-ease), transform .3s var(--pb-ease);
+  }
+  a.btn:hover{ transform:translateY(-2px); }
+  .solid{ background:var(--pb-accent); border-color:var(--pb-accent); color:#fff; }
+  .solid:hover{ background:#fff; border-color:#fff; color:var(--pb-brand); }
+  .ghost{ background:transparent; border-color:rgba(255,255,255,.5); color:#fff; }
+  .ghost:hover{ background:#fff; border-color:#fff; color:var(--pb-brand); }
+  @media(max-width:575px){
+    h1{ font-size:1.6rem; }
+    a.btn{ display:block; max-width:290px; margin:0 auto 10px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="tick"><span style="font-size:34px;line-height:1;color:#A6DCDB">&#10003;</span></div>
+    <p class="eyebrow">Message sent</p>
+    <h1>Thank you for getting in touch</h1>
+    <p>Your message has reached Frances Iger Laterman. You can expect a reply shortly.</p>
+        <div class="links">
+      <a class="btn solid" href="./">Back to the site</a>
+          </div>
+  </div>
+</body>
 </html>
